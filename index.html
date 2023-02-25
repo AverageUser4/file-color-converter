@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FileColorConverter</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  
+  <h1>Welcome to FileColorConverter</h1>
+  <p>Upload a file and choose options, all occurences of given color system will be changed with other color system (eg hex to rgb).</p>
+
+  <form>
+    <label>
+      from:
+      <select id="from">
+        <option value="hexStr">hex (string)</option>
+        <option value="rgbStr">rgb (string)</option>
+        <!-- <option value="rgbObj">rgb (object)</option> -->
+      </select>
+    </label>
+    
+    <label>
+      to:
+      <select id="to">
+        <option value="hexStr">hex (string)</option>
+        <option value="rgbStr">rgb (string)</option>
+        <option value="rgbObj">rgb (object)</option>
+      </select>
+    </label>
+
+    <input type="file"/>
+    <button type="button">go!</button>
+
+    <textarea id="output"></textarea>
+  </form>
+  
+</body>
+
+</html>
